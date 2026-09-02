@@ -1,13 +1,21 @@
 # GREEN YEAR — Art pack
 
-For the Grok Bot team. Floppy-era 16-color farm game.
+Floppy-era 16-color farm game. For the Grok Bot team.
 
-## Download / read
+## Start here
 
-- **Systems + art brief (start here):** [GREEN-YEAR-ART-BRIEF.md](https://github.com/Lingandela/green-year-art-pack/blob/main/GREEN-YEAR-ART-BRIEF.md)
-- **Raw markdown:** [raw file](https://raw.githubusercontent.com/Lingandela/green-year-art-pack/main/GREEN-YEAR-ART-BRIEF.md)
+**[GREEN-YEAR-ART-BRIEF.md](https://github.com/Lingandela/green-year-art-pack/blob/main/GREEN-YEAR-ART-BRIEF.md)** — palette, which file draws which sprite, crop table, layout, systems, questions to mark up.
 
-The brief maps every screenshot to the code file/function that draws it, the 16-color palette, crop table, layout, and questions for notes.
+Raw: [GREEN-YEAR-ART-BRIEF.md](https://raw.githubusercontent.com/Lingandela/green-year-art-pack/main/GREEN-YEAR-ART-BRIEF.md)
+
+## Screenshots (open in htmlpreview if GitHub shows source)
+
+- [Gallery index](https://htmlpreview.github.io/?https://raw.githubusercontent.com/Lingandela/green-year-art-pack/main/index.html)
+- [Title](https://htmlpreview.github.io/?https://raw.githubusercontent.com/Lingandela/green-year-art-pack/main/shots/01-title.html)
+- [Inspect Glim](https://htmlpreview.github.io/?https://raw.githubusercontent.com/Lingandela/green-year-art-pack/main/shots/30-inspect-glim.html)
+- [House interior](https://github.com/Lingandela/green-year-art-pack/blob/main/shots/04-house-interior.html)
+
+More stills live in [`shots/`](https://github.com/Lingandela/green-year-art-pack/tree/main/shots).
 
 ## What to mark up
 
@@ -17,4 +25,4 @@ The brief maps every screenshot to the code file/function that draws it, the 16-
 4. Interior: wood box in soil void, or cutaway?
 5. Locked plots are two posts — easy to miss.
 
-Inspect close-up is the quality bar. Do not blow the 1.44 MB floppy budget.
+Inspect close-up is the quality bar. Floppy budget is 1.44 MB (game is ~263 KB).
