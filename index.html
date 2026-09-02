@@ -1,35 +1,100 @@
-<!DOCTYPE html><html lang=en><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1">
-<title>GREEN YEAR art pack</title>
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>GREEN YEAR — Art pack</title>
 <style>
-body{margin:0;background:#1a1210;color:#ece6d0;font:14px/1.45 ui-monospace,Consolas,monospace}
-header{padding:16px;background:#3c2418;border-bottom:2px solid #ece6d0}
-h1{margin:0 0 8px;font-size:18px} a{color:#e8c848}
-nav{display:flex;flex-wrap:wrap;gap:8px 14px;margin-top:8px}
-section{padding:16px;max-width:72ch}
-ol{line-height:1.8}
+  :root { --ink:#1a1210; --soil:#3c2418; --paper:#ece6d0; --gold:#e8c848; --rust:#c44c28; --muted:#8a5a32; }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--ink); color:var(--paper); font: 15px/1.5 ui-monospace, "Cascadia Mono", "Courier New", monospace; }
+  header { padding: 28px 24px 16px; border-bottom: 2px solid var(--paper); background: var(--soil); }
+  header h1 { margin:0 0 6px; letter-spacing:.08em; font-size: 22px; }
+  header p { margin:0; color:#d0c8b0; max-width: 72ch; }
+  header a { color: var(--gold); }
+  nav { display:flex; flex-wrap:wrap; gap:8px 16px; padding: 12px 24px; background:#2a1810; position:sticky; top:0; z-index:2; border-bottom:1px solid #6b3e24; }
+  nav a { color: var(--gold); text-decoration:none; font-size:12px; letter-spacing:.06em; }
+  section { padding: 20px 24px 8px; }
+  h2 { margin: 0 0 12px; font-size: 14px; letter-spacing:.14em; color: var(--gold); text-transform:uppercase; }
+  .grid { display:grid; grid-template-columns: 1fr; gap: 18px; }
+  @media (min-width: 900px) { .grid { grid-template-columns: 1fr 1fr; } }
+  figure { margin:0; background: var(--soil); border: 2px solid var(--paper); }
+  img { display:block; width:100%; height:auto; image-rendering: pixelated; background:#000; }
+  figcaption { padding: 8px 10px 10px; font-size: 12px; color:#d0c8b0; }
+  figcaption code { color: var(--rust); }
+  footer { padding: 24px; color: var(--muted); font-size: 12px; }
 </style>
 <header>
-<h1>GREEN YEAR — Art pack</h1>
-<p>Screenshots + systems brief for the Grok Bot team.</p>
-<nav>
-<a href="index.html">Home</a>
-<a href="gallery-01-farm.html">Farm</a>
-<a href="gallery-02-house.html">House / stall</a>
-<a href="gallery-03-crops.html">Field crops</a>
-<a href="gallery-04-inspect.html">Inspect</a>
-<a href="gallery-05-ui.html">UI / lighting</a>
-<a href="GREEN-YEAR-ART-BRIEF.md">Brief</a>
-</nav>
+  <h1>GREEN YEAR — Art pack</h1>
+  <p>Screenshot catalog for the Grok Bot team. Read <a href="GREEN-YEAR-ART-BRIEF.md">GREEN-YEAR-ART-BRIEF.md</a> for palette, file map, and how to change each sprite. All art is 16-color procedural VGA — no PNG sheets in the game.</p>
 </header>
-<section>
-<p><a href="GREEN-YEAR-ART-BRIEF.md">GREEN-YEAR-ART-BRIEF.md</a> — palette, file map, crop table, what to mark up.</p>
-<ol>
-<li><a href="gallery-01-farm.html">Farm, plots, hoe</a></li>
-<li><a href="gallery-02-house.html">House, stall, interior</a></li>
-<li><a href="gallery-03-crops.html">Mixed field of all 12 crops</a></li>
-<li><a href="gallery-04-inspect.html">Voxel inspect close-ups</a></li>
-<li><a href="gallery-05-ui.html">Palette, lighting, HUD</a></li>
-</ol>
-<p>If GitHub shows HTML source, open via htmlpreview.github.io using the raw file URL.</p>
-</section>
+<nav>
+  <a href="#palette">Palette & boot</a>
+  <a href="#yard">Yard</a>
+  <a href="#home">Home</a>
+  <a href="#plots">Plots & tools</a>
+  <a href="#lighting">Lighting</a>
+  <a href="#farmer">Farmer</a>
+  <a href="#crops">Inspect — 12 crops</a>
+  <a href="#growth">Inspect — growth</a>
+  <a href="#menus">Menus</a>
+</nav>
+<section id="palette"><h2>Palette & boot</h2><div class="grid"><figure><img src="shots/00-palette.png" alt="VGA 16 — index is law. Do not add a 17th color." loading="lazy"><figcaption><code>00-palette.png</code> — VGA 16 — index is law. Do not add a 17th color.</figcaption></figure>
+<figure><img src="shots/01-title.png" alt="Title / boot. DOM overlay on a pixel sky + cottage silhouette." loading="lazy"><figcaption><code>01-title.png</code> — Title / boot. DOM overlay on a pixel sky + cottage silhouette.</figcaption></figure>
+<figure><img src="shots/50-title-mobile.png" alt="Title at 390×844." loading="lazy"><figcaption><code>50-title-mobile.png</code> — Title at 390×844.</figcaption></figure>
+</div></section>
+<section id="yard"><h2>Yard</h2><div class="grid"><figure><img src="shots/02-farm-spawn.png" alt="Spawn. Cottage west, path, plots, stall east. Farmer ~16px." loading="lazy"><figcaption><code>02-farm-spawn.png</code> — Spawn. Cottage west, path, plots, stall east. Farmer ~16px.</figcaption></figure>
+<figure><img src="shots/03-house-exterior.png" alt="Cottage door. Enter. Roof is rust (14), same family as stall — noted as a gap." loading="lazy"><figcaption><code>03-house-exterior.png</code> — Cottage door. Enter. Roof is rust (14), same family as stall — noted as a gap.</figcaption></figure>
+<figure><img src="shots/07-stall.png" alt="Stall: striped awning, STALL label, merchant, Shop prompt." loading="lazy"><figcaption><code>07-stall.png</code> — Stall: striped awning, STALL label, merchant, Shop prompt.</figcaption></figure>
+<figure><img src="shots/17-field-mixed.png" alt="All 12 species on the field + scarecrow. Silhouette test." loading="lazy"><figcaption><code>17-field-mixed.png</code> — All 12 species on the field + scarecrow. Silhouette test.</figcaption></figure>
+<figure><img src="shots/18-scarecrow.png" alt="Scarecrow (shop unlock, cuts pest chance)." loading="lazy"><figcaption><code>18-scarecrow.png</code> — Scarecrow (shop unlock, cuts pest chance).</figcaption></figure>
+<figure><img src="shots/51-farm-mobile.png" alt="Farm + HTML d-pad / tools at 390×844." loading="lazy"><figcaption><code>51-farm-mobile.png</code> — Farm + HTML d-pad / tools at 390×844.</figcaption></figure>
+</div></section>
+<section id="home"><h2>Home</h2><div class="grid"><figure><img src="shots/04-house-interior.png" alt="Interior spawn on the rug. Not on the door (Leave does not auto-fire)." loading="lazy"><figcaption><code>04-house-interior.png</code> — Interior spawn on the rug. Not on the door (Leave does not auto-fire).</figcaption></figure>
+<figure><img src="shots/05-house-bed.png" alt="Bed. Sleep here or use the Sleep button." loading="lazy"><figcaption><code>05-house-bed.png</code> — Bed. Sleep here or use the Sleep button.</figcaption></figure>
+<figure><img src="shots/06-house-table.png" alt="Table + candle. Window shows sky / night." loading="lazy"><figcaption><code>06-house-table.png</code> — Table + candle. Window shows sky / night.</figcaption></figure>
+</div></section>
+<section id="plots"><h2>Plots & tools</h2><div class="grid"><figure><img src="shots/08-plots-empty.png" alt="Starting two unlocked beds + locked posts." loading="lazy"><figcaption><code>08-plots-empty.png</code> — Starting two unlocked beds + locked posts.</figcaption></figure>
+<figure><img src="shots/09-plots-unlocked-locked.png" alt="Four unlocked frames vs posts. Posts are easy to miss." loading="lazy"><figcaption><code>09-plots-unlocked-locked.png</code> — Four unlocked frames vs posts. Posts are easy to miss.</figcaption></figure>
+<figure><img src="shots/10-till-swing.png" alt="Hoe swing + dirt burst." loading="lazy"><figcaption><code>10-till-swing.png</code> — Hoe swing + dirt burst.</figcaption></figure>
+<figure><img src="shots/11-plot-tilled.png" alt="Tilled dirt tiles inside wood frame." loading="lazy"><figcaption><code>11-plot-tilled.png</code> — Tilled dirt tiles inside wood frame.</figcaption></figure>
+<figure><img src="shots/12-plot-planted.png" alt="Seed stage in the bed. Can equipped." loading="lazy"><figcaption><code>12-plot-planted.png</code> — Seed stage in the bed. Can equipped.</figcaption></figure>
+<figure><img src="shots/13-plot-sprout.png" alt="Sprout / first leaves." loading="lazy"><figcaption><code>13-plot-sprout.png</code> — Sprout / first leaves.</figcaption></figure>
+<figure><img src="shots/14-plot-leaf.png" alt="Leaf stage." loading="lazy"><figcaption><code>14-plot-leaf.png</code> — Leaf stage.</figcaption></figure>
+<figure><img src="shots/15-plot-ripe.png" alt="Ripe Glim + sparkle." loading="lazy"><figcaption><code>15-plot-ripe.png</code> — Ripe Glim + sparkle.</figcaption></figure>
+<figure><img src="shots/16-plot-pest.png" alt="Pest (black mite) on the plant. Inspect to pluck." loading="lazy"><figcaption><code>16-plot-pest.png</code> — Pest (black mite) on the plant. Inspect to pluck.</figcaption></figure>
+<figure><img src="shots/26-water-swing.png" alt="Watering can tilt." loading="lazy"><figcaption><code>26-water-swing.png</code> — Watering can tilt.</figcaption></figure>
+</div></section>
+<section id="lighting"><h2>Lighting</h2><div class="grid"><figure><img src="shots/19-dusk.png" alt="Dusk sky (rust + gold). shadeIndex not fully night yet." loading="lazy"><figcaption><code>19-dusk.png</code> — Dusk sky (rust + gold). shadeIndex not fully night yet.</figcaption></figure>
+<figure><img src="shots/20-night.png" alt="Night remap + moon + stars." loading="lazy"><figcaption><code>20-night.png</code> — Night remap + moon + stars.</figcaption></figure>
+<figure><img src="shots/21-rain.png" alt="Rain streaks, wet lighting." loading="lazy"><figcaption><code>21-rain.png</code> — Rain streaks, wet lighting.</figcaption></figure>
+</div></section>
+<section id="farmer"><h2>Farmer</h2><div class="grid"><figure><img src="shots/22-player-down.png" alt="Farmer, facing down, hoe." loading="lazy"><figcaption><code>22-player-down.png</code> — Farmer, facing down, hoe.</figcaption></figure>
+<figure><img src="shots/23-player-left.png" alt="Facing west." loading="lazy"><figcaption><code>23-player-left.png</code> — Facing west.</figcaption></figure>
+<figure><img src="shots/24-player-right.png" alt="Facing east." loading="lazy"><figcaption><code>24-player-right.png</code> — Facing east.</figcaption></figure>
+<figure><img src="shots/25-player-up.png" alt="Facing north (no face pixels)." loading="lazy"><figcaption><code>25-player-up.png</code> — Facing north (no face pixels).</figcaption></figure>
+</div></section>
+<section id="crops"><h2>Inspect — 12 crops</h2><div class="grid"><figure><img src="shots/30-inspect-glim.png" alt="INSPECT Glim (berry). The quality bar for all plants." loading="lazy"><figcaption><code>30-inspect-glim.png</code> — INSPECT Glim (berry). The quality bar for all plants.</figcaption></figure>
+<figure><img src="shots/30-inspect-pip.png" alt="Pip (root)." loading="lazy"><figcaption><code>30-inspect-pip.png</code> — Pip (root).</figcaption></figure>
+<figure><img src="shots/30-inspect-thatch.png" alt="Thatch (grain)." loading="lazy"><figcaption><code>30-inspect-thatch.png</code> — Thatch (grain).</figcaption></figure>
+<figure><img src="shots/30-inspect-marrow.png" alt="Marrow (squash)." loading="lazy"><figcaption><code>30-inspect-marrow.png</code> — Marrow (squash).</figcaption></figure>
+<figure><img src="shots/30-inspect-vesper.png" alt="Vesper (bell)." loading="lazy"><figcaption><code>30-inspect-vesper.png</code> — Vesper (bell).</figcaption></figure>
+<figure><img src="shots/30-inspect-moonlace.png" alt="Moonlace — Glim × Vesper." loading="lazy"><figcaption><code>30-inspect-moonlace.png</code> — Moonlace — Glim × Vesper.</figcaption></figure>
+<figure><img src="shots/30-inspect-strawgold.png" alt="Strawgold — Thatch × Glim." loading="lazy"><figcaption><code>30-inspect-strawgold.png</code> — Strawgold — Thatch × Glim.</figcaption></figure>
+<figure><img src="shots/30-inspect-amber.png" alt="Amberdrop — Glim × Marrow." loading="lazy"><figcaption><code>30-inspect-amber.png</code> — Amberdrop — Glim × Marrow.</figcaption></figure>
+<figure><img src="shots/30-inspect-ironvine.png" alt="Ironvine — Thatch × Marrow." loading="lazy"><figcaption><code>30-inspect-ironvine.png</code> — Ironvine — Thatch × Marrow.</figcaption></figure>
+<figure><img src="shots/30-inspect-bloodroot.png" alt="Bloodroot — Marrow × Vesper." loading="lazy"><figcaption><code>30-inspect-bloodroot.png</code> — Bloodroot — Marrow × Vesper.</figcaption></figure>
+<figure><img src="shots/30-inspect-glassheart.png" alt="Glassheart — Pip × Moonlace." loading="lazy"><figcaption><code>30-inspect-glassheart.png</code> — Glassheart — Pip × Moonlace.</figcaption></figure>
+<figure><img src="shots/30-inspect-heirloom.png" alt="Heirloom — endgame crown." loading="lazy"><figcaption><code>30-inspect-heirloom.png</code> — Heirloom — endgame crown.</figcaption></figure>
+</div></section>
+<section id="growth"><h2>Inspect — growth</h2><div class="grid"><figure><img src="shots/31-inspect-seed.png" alt="Inspect stage SEED." loading="lazy"><figcaption><code>31-inspect-seed.png</code> — Inspect stage SEED.</figcaption></figure>
+<figure><img src="shots/32-inspect-sprout.png" alt="Inspect stage SPROUT." loading="lazy"><figcaption><code>32-inspect-sprout.png</code> — Inspect stage SPROUT.</figcaption></figure>
+<figure><img src="shots/34-inspect-bud.png" alt="Inspect stage BUD." loading="lazy"><figcaption><code>34-inspect-bud.png</code> — Inspect stage BUD.</figcaption></figure>
+<figure><img src="shots/35-inspect-pest.png" alt="Inspect pest (tap to pluck)." loading="lazy"><figcaption><code>35-inspect-pest.png</code> — Inspect pest (tap to pluck).</figcaption></figure>
+<figure><img src="shots/36-inspect-rotated.png" alt="Heirloom rotated (drag / A D)." loading="lazy"><figcaption><code>36-inspect-rotated.png</code> — Heirloom rotated (drag / A D).</figcaption></figure>
+</div></section>
+<section id="menus"><h2>Menus</h2><div class="grid"><figure><img src="shots/40-shop.png" alt="Stall catalog (seeds, deeds, gear)." loading="lazy"><figcaption><code>40-shop.png</code> — Stall catalog (seeds, deeds, gear).</figcaption></figure>
+<figure><img src="shots/41-almanac.png" alt="Almanac 12/12 with cross labels." loading="lazy"><figcaption><code>41-almanac.png</code> — Almanac 12/12 with cross labels.</figcaption></figure>
+<figure><img src="shots/42-talk.png" alt="Merchant talk line." loading="lazy"><figcaption><code>42-talk.png</code> — Merchant talk line.</figcaption></figure>
+</div></section>
+<footer>49 shots · 16-color VGA · floppy budget 1.44 MB · leaf-stage inspect still is not in this pack</footer>
 </html>
