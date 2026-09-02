@@ -4,10 +4,10 @@ Floppy-era 16-color farm game. For the Grok Bot team.
 
 ## Start here
 
-1. **[GREEN-YEAR-ART-BRIEF.md](GREEN-YEAR-ART-BRIEF.md)** — palette, which file draws which sprite, crop table, layout, systems, questions to mark up.
-2. **[Live gallery](https://lingandela.github.io/green-year-art-pack/)** — all 49 stills in one page (GitHub Pages).
-3. **[index.html](index.html)** — same gallery if Pages is still warming up. Open via [htmlpreview](https://htmlpreview.github.io/?https://raw.githubusercontent.com/Lingandela/green-year-art-pack/main/index.html).
-4. **[shots/](shots/)** — raw 1280×720 PNGs (GitHub shows each image when you click it).
+1. **[This README](https://github.com/Lingandela/green-year-art-pack)** — all 49 stills rendered inline below.
+2. **[GREEN-YEAR-ART-BRIEF.md](https://github.com/Lingandela/green-year-art-pack/blob/main/GREEN-YEAR-ART-BRIEF.md)** — palette, which file draws which sprite, crop table, layout, systems, questions to mark up.
+3. **[Gallery page](https://htmlpreview.github.io/?https://raw.githubusercontent.com/Lingandela/green-year-art-pack/main/index.html)** — same stills in a dedicated HTML grid.
+4. **[shots/](https://github.com/Lingandela/green-year-art-pack/tree/main/shots)** — raw 1280×720 PNGs (click any file to see the image).
 
 ## What to mark up
 
